@@ -1,19 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+import NavBar from './components/NavBar';
+
+const App =() => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Niccolò Galimberti
-        </p>
-        <p>
-          E-commerce
-        </p>
-      </header>
-    </div>
+    <>
+    <NavBar />
+    <h1>Niccolò Galimberti</h1>
+    <h2>E-commerce</h2>
+    </>
   );
 }
 
