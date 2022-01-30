@@ -1,12 +1,17 @@
 import "./NavBar.css";
-import CartWidget from "./components/CartWidget";
+
+//COMPONENTS
+import CartWidget from '../CartWidget/CartWidget';
+
+//IMAGES
+import logo from '../../assets/icons/logo-ecommerce.png';
 
 const NavBar = () => {
     return (
     <nav className="Menu">
         <ul>
             <li>
-                <img src={require('./icons/logo-ecommerce.png')} alt="logo ecommerce" width="55px"></img>
+                <img src={logo} alt="logo" width="50px" />
             </li>
             <li>Home</li>
             <li>Products</li>

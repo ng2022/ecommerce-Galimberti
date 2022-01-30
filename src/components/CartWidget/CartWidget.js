@@ -1,9 +1,9 @@
-
+import chartIcon from '../../assets/icons/shopping-cart.png';
 
 const CartWidget = () => {
     return (
         <img
-        src={require('./icons/shopping-cart.png')}
+        src={chartIcon}
         alt="chart icon"
         width="25px"
         />
