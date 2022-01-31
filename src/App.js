@@ -18,16 +18,22 @@ const App = () => {
     name='Marco Polo'
     description='Prova prova prova.'
     img={userImage}
+    initial={4}
+    stock={15}
     />
     <ItemListContainer 
     name='Galileo Galilei'
     description='Prova prova prova.'
     img={userImage}
+    initial={1}
+    stock={10}
     />
     <ItemListContainer 
     name='Critobal Colon'
     description='Prova prova prova.'
     img={userImage}
+    initial={2}
+    stock={30}
     />
     </div>
     </>

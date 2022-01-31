@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 //COMPONENTS
 import ItemCount from '../ItemCount/ItemCount';
 
-const ItemListContainer = ({name, description, img,}) => {
+const ItemListContainer = ({name, description, img, initial, stock}) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -26,7 +26,7 @@ const ItemListContainer = ({name, description, img,}) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <ItemCount initial='3' stock='6' />
+        <ItemCount initial={initial} stock={stock} />
       </CardActions>
     </Card>
   );

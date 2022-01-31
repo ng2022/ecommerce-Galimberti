@@ -8,14 +8,14 @@ import Typography from '@mui/material/Typography';
 function ItemCount ({initial, stock, onAdd}) {
     const [counter, setCounter] = useState(initial);
 
-    if(counter <0) {
-        setCounter(0);
+    if(counter < initial) {
+        setCounter(initial);
     } else if (counter > stock) {
         setCounter(stock);
     }
 
-    if (stock ===0) {
-        counter=(0);
+    if (stock <1) {
+        setCounter=(initial);
     }
 
     return (
