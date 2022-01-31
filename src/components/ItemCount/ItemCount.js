@@ -8,23 +8,31 @@ import Typography from '@mui/material/Typography';
 function ItemCount ({initial, stock, onAdd}) {
     const [counter, setCounter] = useState(initial);
 
-    if(counter < initial) {
-        setCounter(initial);
-    } else if (counter > stock) {
-        setCounter(stock);
+    function sumar () {
+        if (counter < stock) {
+                setCounter(counter +1)
+        }
     }
 
-    if (stock <1) {
-        setCounter=(initial);
+    function restar () {
+            if (counter != initial) {
+                setCounter(counter -1)
+            }
     }
+
+    // if(counter < initial) {
+    //     setCounter(initial);
+    // } else if (counter > stock) {
+    //     setCounter(stock);
+    // }
 
     return (
     <ButtonGroup variant="outlined" aria-label="outlined button group">
-        <Button onClick={() => setCounter (counter -1)}>-</Button>
+        <Button onClick={restar}>-</Button>
         <Box component="span" sx={{ p: 2, border: '1px solid'}}>
-        <Typography>{counter}</Typography>
+        <Typography>{stock ==0 ? 0 : counter}</Typography>
         </Box>
-        <Button onClick={() => setCounter (counter +1)}>+</Button>
+        <Button onClick={sumar}>+</Button>
         <Button onClick={onAdd = () => alert(counter)} disabled={stock <1}>Add product</Button>
     </ButtonGroup>
     );

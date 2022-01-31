@@ -19,22 +19,22 @@ const App = () => {
     name='Marco Polo'
     description='Prova prova prova.'
     img={userImage}
-    initial={4}
+    initial={6}
     stock={15}
     />
     <ItemListContainer 
     name='Galileo Galilei'
     description='Prova prova prova.'
     img={userImage}
-    initial={1}
-    stock={10}
+    initial={3}
+    stock={0}
     />
     <ItemListContainer 
     name='Critobal Colon'
     description='Prova prova prova.'
     img={userImage}
-    initial={2}
-    stock={30}
+    initial={1}
+    stock={10}
     />
     </div>
     <ItemList />
