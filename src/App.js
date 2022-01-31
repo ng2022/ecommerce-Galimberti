@@ -7,6 +7,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 //IMAGES
 import userImage from './assets/images/user-img.png';
+import ItemList from './components/ItemList/ItemList';
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
     stock={30}
     />
     </div>
+    <ItemList />
     </>
   );
 }
